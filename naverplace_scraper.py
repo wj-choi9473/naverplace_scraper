@@ -5,9 +5,7 @@ import tqdm
 import pandas as pd
 import numpy as np
 
-# 강사님 
-# 클래스 이름은 대문자로! 
-# 반복적인 부분 더 고칠수 있을거 같은데 일단 코드 자체 완성도는 만족하신다 함 
+
 class Mydriver:
     def __init__(self):
         options = webdriver.ChromeOptions()
@@ -18,7 +16,7 @@ class Mydriver:
     @staticmethod
     def load_cafe_list():
         """
-        팀원분이 공유해주신 카페 리스트를 가져옵니다.
+        미리 만들어둔 카페 리스트를 가져옵니다.
         """
         with open("cafelist.pickle","rb") as f:
             cafels = pickle.load(f)
